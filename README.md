@@ -59,6 +59,11 @@ Fail-operational System
 > 
 ># 2. ZeroMQ (zmqpp)
 >## 2.1 Install and Build of ZeroMQ for cpp
+>~~~
+>sudo apt update
+>sudo apt upgrade
+>sudo apt install libzmq3-dev
+>~~~
 >http://github.com/zeromq/zmqpp
 >~~~
 >git clone git://github.com/jedisct1/libsodium.git
