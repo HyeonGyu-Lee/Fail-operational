@@ -55,3 +55,36 @@ sudo chmod +x /etc/rc.local
 sh /enable_CAN.sh &
 exit 0
 ```
+
+>## 2.1 ZeroMQ (zmqpp)
+>-Install and Build of ZeroMQ for cpp
+>http://github.com/zeromq/zmqpp
+>~~~
+>git clone git://github.com/jedisct1/libsodium.git
+>cd libsodium
+>./autogen.sh 
+>./configure && make check 
+>sudo make install 
+>sudo ldconfig
+>cd ../
+># Build, check, and install the latest version of ZeroMQ
+>git clone git://github.com/zeromq/libzmq.git
+>cd libzmq
+>./autogen.sh 
+>./configure --with-libsodium && make
+>sudo make install
+>sudo ldconfig
+>cd ../
+># Now install ZMQPP
+>git clone git://github.com/zeromq/zmqpp.git
+>cd zmqpp
+>make
+>make check
+>sudo make install
+>make installcheck
+>~~~
+>-Environment setup
+>-Setup the path
+>~~~
+>sudo cp -R /usr/local/lib/* /usr/lib
+>~~~
