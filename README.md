@@ -57,7 +57,7 @@ Fail-operational System
 > ```
 > 
 ># 2.1 ZeroMQ (zmqpp)
->##Install and Build of ZeroMQ for cpp
+>## Install and Build of ZeroMQ for cpp
 >http://github.com/zeromq/zmqpp
 >~~~
 >git clone git://github.com/jedisct1/libsodium.git
@@ -83,7 +83,7 @@ Fail-operational System
 >sudo make install
 >make installcheck
 >~~~
->##Environment setup
+>## Environment setup
 >-Setup the path
 >~~~
 >sudo cp -R /usr/local/lib/* /usr/lib
