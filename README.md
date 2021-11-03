@@ -27,7 +27,7 @@ Fail-operational System
 > touch /enable_CAN.sh
 > chmod 755 /enable_CAN.sh
 > ```
-> ## 1.1 /enable_CAN.sh
+> ## 1.2 /enable_CAN.sh
 > ```
 > #!/bin/bash
 > sudo busybox devmem 0x0c303000 32 0x0000C400
@@ -50,7 +50,7 @@ Fail-operational System
 > sudo chmod +x /etc/rc.local
 > ```
 > 
-> ## 1.2 /etc/rc.local
+> ## 1.3 /etc/rc.local
 > ```
 > #!/bin/bash
 > sh /enable_CAN.sh &
