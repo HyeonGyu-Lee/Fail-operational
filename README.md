@@ -1,7 +1,7 @@
 # Fail-operational
 Fail-operational System
 
-> ## 1. Enable CAN on Nvidia Jetson Xavier (JetPack 4.5.1)
+> # 1. Enable CAN on Nvidia Jetson Xavier (JetPack 4.5.1)
 > https://medium.com/@ramin.nabati/enabling-can-on-nvidia-jetson-xavier-developer-kit-aaaa3c4d99c9
 > ```
 > sudo apt-get install busybox
@@ -26,7 +26,7 @@ Fail-operational System
 > touch /enable_CAN.sh
 > chmod 755 /enable_CAN.sh
 > ```
-> # /enable_CAN.sh
+> ## /enable_CAN.sh
 > ```
 > #!/bin/bash
 > sudo busybox devmem 0x0c303000 32 0x0000C400
@@ -49,15 +49,15 @@ Fail-operational System
 > sudo chmod +x /etc/rc.local
 > ```
 > 
-> # /etc/rc.local
+> ## /etc/rc.local
 > ```
 > #!/bin/bash
 > sh /enable_CAN.sh &
 > exit 0
 > ```
 > 
->## 2.1 ZeroMQ (zmqpp)
->-Install and Build of ZeroMQ for cpp
+># 2.1 ZeroMQ (zmqpp)
+>##Install and Build of ZeroMQ for cpp
 >http://github.com/zeromq/zmqpp
 >~~~
 >git clone git://github.com/jedisct1/libsodium.git
@@ -83,7 +83,7 @@ Fail-operational System
 >sudo make install
 >make installcheck
 >~~~
->-Environment setup
+>##Environment setup
 >-Setup the path
 >~~~
 >sudo cp -R /usr/local/lib/* /usr/lib
